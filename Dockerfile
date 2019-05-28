@@ -1,7 +1,5 @@
 FROM java:8u111-jdk
 
-MAINTAINER infoander@gmail.com
-
 VOLUME /tmp
 
 EXPOSE 8080
