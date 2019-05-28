@@ -1,3 +1,6 @@
+[![Coverage Status](https://coveralls.io/repos/github/aoliveiradias/labs/badge.svg?branch=master)](https://coveralls.io/github/aoliveiradias/labs?branch=master) 
+[![Build Status](https://travis-ci.com/aoliveiradias/labs.svg?branch=master)](https://travis-ci.com/aoliveiradias/labs)
+
 # Projeto API Labs
 
 Api que contém o cadastro, listagem e deleção de pessoas.
