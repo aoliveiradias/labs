@@ -2,7 +2,7 @@
 
 Api que contém o cadastro, listagem e deleção de pessoas.
 
-##Dependências externas
+## Dependências externas
 
 Como a Api faz integração com o Facebook por isso é necessário ter um access_token válido para realizar as consultas.
 
@@ -27,8 +27,6 @@ Como a Api faz integração com o Facebook por isso é necessário ter um access
 O projeto possui um documentação de API através do swagger.
 
 Para acessar:
-
-### Api: beer-style-resource : Beer Style Resource
 
 http://localhost:8080/api/swagger-ui.html
 
