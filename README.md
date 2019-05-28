@@ -25,14 +25,13 @@ Como a Api faz integração com o Facebook por isso é necessário ter um access
     
     * Spring Boot Test - Para os testes de integração
 
-# Documentação através do swagger (versão 2.9.2)
+## Documentação através do swagger (versão 2.9.2)
 
 O projeto possui um documentação de API através do swagger.
 
 Para acessar:
 
-http://localhost:8080/api/swagger-ui.html
-
+``http://localhost:8080/api/swagger-ui.html``
 
 ## Para exeuctar o build, testes e realizar o start do programa
 
@@ -69,8 +68,8 @@ Para executar no Linux e Mac execute os comando abaixo:
 ```
 Para ambiente Windows. Execute os comando abaixo:
 ```
-./gradlew build
-docker rmi -f labs
-docker build -t labs .
-docker run --name labs -p 8080:8080 -t labs
+ ./gradlew build
+ docker rmi -f labs
+ docker build -t labs .
+ docker run --name labs -p 8080:8080 -t labs
 ```
