@@ -47,6 +47,6 @@ class PersonService {
     }
 
     Person findById(String id) {
-        return personRepository.findById(id).orElseThrow(RuntimeException::new);
+        return personRepository.findById(id).orElseThrow(PersonNotFoundException::new);
     }
 }

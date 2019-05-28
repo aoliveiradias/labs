@@ -177,6 +177,14 @@ public class PersonControllerTest {
         Assert.assertEquals(alinePerson.getFacebookId(), personGetResponseDto.getFacebookId());
     }
 
+    @Test
+    public void shouldReturnNotFoundWhenGetById() throws Exception {
+        mvc.perform(get("/person/" + UUID.randomUUID().toString())
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound());
+
+    }
+
     private Person createPerson(String name) {
         Person person = new Person(UUID.randomUUID().toString(), name);
         personRepository.save(person);
