@@ -6,6 +6,10 @@ class PersonGetResponseDto {
 
     private String name;
 
+    @Deprecated
+    PersonGetResponseDto() {
+    }
+
     public PersonGetResponseDto(String facebookId, String name) {
         this.facebookId = facebookId;
         this.name = name;
