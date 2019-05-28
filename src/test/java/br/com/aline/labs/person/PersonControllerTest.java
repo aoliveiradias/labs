@@ -184,7 +184,7 @@ public class PersonControllerTest {
 
     @Test
     public void shouldReturnNotFoundWhenGetById() throws Exception {
-        Person alinePerson = createPerson("Aline");
+        createPerson("Aline");
         mvc.perform(get("/person/" + UUID.randomUUID().toString())
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
