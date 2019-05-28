@@ -11,19 +11,19 @@ Como a Api faz integração com o Facebook por isso é necessário ter um access
 
 ## Tecnologias utilizadas
 
-* Linguagem Java - Versão 1.8 (Oracle 1.8.0_121)
-
-* Gradle 5 - Ferramenta de Build
-
-* Versionador - Git
-
-* Banco de Dados - Mongo (emmbed tanto para local quanto para testes)
-
-* Spring Boot (2.1.5.RELEASE) - Setup de projeto
-
-* Open Feign - Para integração com Apis externas
-
-* Spring Boot Test - Para os testes de integração
+    * Linguagem Java - Versão 1.8 (Oracle 1.8.0_121)
+    
+    * Gradle 5 - Ferramenta de Build
+    
+    * Versionador - Git
+    
+    * Banco de Dados - Mongo (emmbed tanto para local quanto para testes)
+    
+    * Spring Boot (2.1.5.RELEASE) - Setup de projeto
+    
+    * Open Feign - Para integração com Apis externas
+    
+    * Spring Boot Test - Para os testes de integração
 
 # Documentação através do swagger (versão 2.9.2)
 
