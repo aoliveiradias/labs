@@ -73,3 +73,6 @@ Para ambiente Windows. Execute os comando abaixo:
  docker build -t labs .
  docker run --name labs -p 8080:8080 -t labs
 ```
+
+## Cobertura de testes
+   Para a cobertura de testes foi utilizado `https://coveralls.io` e a respectiva cobertura está na badge acima.
