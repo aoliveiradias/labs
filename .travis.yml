@@ -1,0 +1,10 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+after_success:
+  - COVERALL_REPO_TOKEN=$COVERALLS_REPO_TOKEN ./gradlew build test jacocoTestReport coveralls
+
+after_failure:
+  - ./gradlew clean check --debug
