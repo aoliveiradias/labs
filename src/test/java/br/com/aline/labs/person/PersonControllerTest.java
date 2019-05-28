@@ -97,10 +97,15 @@ public class PersonControllerTest {
 
     @Test
     public void shouldReturnBadRequestWhenLimitIs0OnGetAllPersonWithLimit() throws Exception {
+        createPerson("Aline");
         String limit = "0";
+
         mvc.perform(get("/person?limit=" + limit)
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
+
+        List<Person> personList = personRepository.findAll();
+        Assert.assertEquals(1, personList.size());
 
     }
 
@@ -179,9 +184,13 @@ public class PersonControllerTest {
 
     @Test
     public void shouldReturnNotFoundWhenGetById() throws Exception {
+        Person alinePerson = createPerson("Aline");
         mvc.perform(get("/person/" + UUID.randomUUID().toString())
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
+
+        List<Person> personList = personRepository.findAll();
+        Assert.assertEquals(1, personList.size());
 
     }
 
